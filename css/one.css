@@ -1,0 +1,142 @@
+body {
+    background-color: #fff;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+
+/* banner  */
+
+.banner {
+    width: 100%;
+    height: 900px;
+    background-color: aqua;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 50px;
+}
+
+.main-conten {
+    display: flex;
+    padding: 100px 0;
+}
+
+.main-box {
+    flex: 1;
+}
+
+.mb-l p {
+    font-size: 3rem;
+}
+
+.mb-l h6 {
+    padding-top: 10px;
+    font-size: 0.8rem;
+}
+
+.main-box ul>p {
+    padding: 10px 10px 30px 10px;
+    font-size: 1.5rem;
+}
+
+.main-box ul li {
+    position: relative;
+    height: 200px;
+    padding: 10px 10px 0 10px;
+}
+
+.main-box ul li a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.main-box .tp {
+    width: 120px;
+    height: 90px;
+}
+
+.main-box .tp img {
+    width: 100%;
+}
+
+.main-box .text {
+    width: 300px;
+    height: 140px;
+}
+
+.text-t {
+    height: 40px;
+}
+
+.text-t p {
+    float: left;
+    width: 60%;
+    font-size: 1.2rem;
+    color: #000;
+}
+
+.text-t span {
+    float: right;
+    width: 40%;
+    font-size: .8rem;
+    text-align: right;
+    color: #666;
+}
+
+.text-c {
+    color: #000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.text .iconfont {
+    float: right;
+    height: 16px;
+    width: 40px;
+    padding-left: 24px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #fff;
+    background-color: #000;
+    transition: width .5s;
+}
+
+.biankuang {
+    position: absolute;
+    top: 90%;
+    height: 1px;
+    width: 95%;
+    background-color: #ccc;
+}
+
+.biankuangbag {
+    position: absolute;
+    top: 90%;
+    height: 3px;
+    width: 0%;
+    background-color: #000;
+    transition: width .5s;
+}
+
+.main-box ul li:hover:hover .biankuangbag {
+    width: 95%;
+}
+
+.main-box ul li:hover .iconfont {
+    width: 20px;
+    padding: 0;
+    text-align: center;
+}
